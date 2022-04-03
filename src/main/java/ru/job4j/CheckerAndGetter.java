@@ -4,8 +4,10 @@ import java.util.List;
 
 /**
  * List
- * boolean isEmpty()
+ * boolean isEmpty() - если коллекция пока еще
+ * не содержит елеметов вернет true.
  * E get(int index)
+ * size() - вернет размер коллекции
  */
 public class CheckerAndGetter {
     public static String getElement(List<String> list) {
