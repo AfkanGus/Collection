@@ -1,5 +1,5 @@
 package ru.job4j;
-
+/*Поиск данных в списках*/
 public class Person {
     private String name;
     private String surname;
