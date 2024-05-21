@@ -5,15 +5,12 @@ import java.util.List;
 
 public class NotifyAccount {
     public static HashSet<Account> sent(List<Account> accountList) {
-        HashSet<Account> result = new HashSet<>();
+        HashSet<Account> hashSet = new HashSet<>();
         for (Account a : accountList) {
             if (accountList.contains(a)) {
-                result.add(a);
+                hashSet.add(a);
             }
         }
-
-        return result;
-
+        return hashSet;
     }
-
 }

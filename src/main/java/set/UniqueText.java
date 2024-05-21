@@ -1,6 +1,5 @@
 package set;
 
-import java.util.Collections;
 import java.util.HashSet;
 
 /*
@@ -12,13 +11,13 @@ public class UniqueText {
     public boolean isEquals(String originText, String duplicateText) {
         HashSet<String> check = new HashSet<>();
         boolean rsl = true;
-        String[] origin = originText.split(" ");// split преобразование строк в массив строк.
+        String[] origin = originText.split(" ");
         String[] duplicate = duplicateText.split(" ");
-        for (String o : origin) {//массив строк вставить через цикл в check.
+        for (String o : origin) {
             check.add(o);
         }
         for (String d : duplicate) {
-            if (!check.contains(d)) {//проверить массив строк через цикл в check используя contains.
+           if (!check.contains(d)) {
                 return false;
             }
         }
